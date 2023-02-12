@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 body::before {
     display: block;
     content: '';

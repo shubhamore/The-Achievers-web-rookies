@@ -1,15 +1,18 @@
-<div class="row mt-5">
-    <div class="col-md-6 m-auto">
-      <div class="card card-body">
-        <h1 class="text-center mb-3">
-          <i class="fas fa-user-plus"></i> Register
+<section class="p-5">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4 m-auto">
+        <div class="card card-body">
+          <h1 class="text-center mb-3">
+            <i class="fas fa-user-plus"></i> Register
         </h1>
        <%- include ("./partials/messages.ejs") %>
         <form action="/registerWorker" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
             <input
-              type="name"
+            type="name"
               id="name"
               name="name"
               class="form-control"
@@ -26,32 +29,32 @@
               class="form-control"
               placeholder="Enter username"
               value="<%= typeof username != 'undefined' ? username : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="contact_no">contact</label>
-            <input
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact_no">contact</label>
+              <input
               type="contact_no"
               id="contact_no"
               name="contact_no"
               class="form-control"
               placeholder="Enter contact"
               value="<%= typeof contact_no != 'undefined' ? contact : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="location">Enter Locations details</label>
-            <input
+              />
+            </div>
+            <div class="form-group">
+              <label for="location">Enter Locations details</label>
+              <input
               type="location"
               id="location"
               name="location"
               class="form-control"
               placeholder="Enter location"
               value="<%= typeof location != 'undefined' ? location : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="experience">Enter years of Experience</label>
+              />
+            </div>
+            <div class="form-group">
+              <label for="experience">Enter years of Experience</label>
             <input
               type="experience"
               id="experience"
@@ -64,63 +67,67 @@
           <div class="form-group">
             <label for="email">email</label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control"
-              placeholder="Enter email"
-              value="<%= typeof email != 'undefined' ? email : '' %>"
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
             />
           </div>
           <div class="form-group">
             <label for="id_proof">email</label>
             <input
-              type="id_proof"
-              id="id_proof"
+            type="id_proof"
+            id="id_proof"
               name="id_proof"
               class="form-control"
               placeholder="Upload id_proof"
               value="<%= typeof id_proof != 'undefined' ? id_proof : '' %>"
-            />
-          </div>
+              />
+            </div>
           <div class="form-group">
             <label for="field_work">Enter Field of work</label>
             <input
-              type="field_work"
-              id="field_work"
-              name="field_work"
-              class="form-control"
-              placeholder="Enter Field of work"
-              value="<%= typeof field_work != 'undefined' ? field_work : '' %>"
+            type="field_work"
+            id="field_work"
+            name="field_work"
+            class="form-control"
+            placeholder="Enter Field of work"
+            value="<%= typeof field_work != 'undefined' ? field_work : '' %>"
             />
           </div>
           <div class="form-group">
             <label for="password">Password</label>
             <input
-              type="password"
-              id="password"
-              name="password"
-              class="form-control"
-              placeholder="Create Password"
-              value="<%= typeof password != 'undefined' ? password : '' %>"
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
             />
           </div>
           <div class="form-group">
             <label for="password2">Confirm Password</label>
             <input
-              type="password"
-              id="password2"
-              name="password2"
-              class="form-control"
-              placeholder="Confirm Password"
-              value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
             />
           </div>
-          <button type="submit" class="btn btn-primary btn-block">
-            Register
-          </button>
+          <div class="d-grid gap-2 mt-3">
+            <button type="submit" class="btn btn-primary btn-block">
+              Register
+            </button>
+          </div>
         </form>
         <p class="lead mt-4">Have An Account? <a href="/login">Login</a></p>
       </div>
     </div>
   </div>
+  </div>
+  </section>
